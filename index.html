@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap demo</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Add +
+    </button>
+    
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Registro</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+
+            <div class="modal-body inputs">
+
+                <div class="row">   
+                    <div class="col">
+                        <label for="ficha">Ficha</label>
+                        <input class="form-control" type="number" name="ficha" id="ficha">
+                    </div>
+                    
+                    <div class="col">
+                        <label for="sex">Sexo</label>
+                        <select class="form-select">
+                            <option selected>M</option>
+                            <option value="2">F</option>
+                            <option value="3">Otro</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="edad">Edad</label>
+                        <input class="form-control type="number" min="1" name="edad" id="edad">
+                    </div>
+
+                    <div class="col">
+                        <label for="av-od-sin-rx">AV-OD SIN RX</label>
+                        <select class="form-select">
+                            <option selected>20/10</option>
+                            <option value="2">20/25</option>
+                            <option value="3">20/30</option>
+                            <option value="3">20/40</option>
+                            <option value="3">20/50</option>
+                            <option value="3">20/80</option>
+                            <option value="3">20/100</option>
+                            <option value="3">20/200</option>
+                            <option value="3">20/400</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="av-oi-sin-rx">AV-OI SIN RX</label>
+                        <select class="form-select">
+                            <option selected>20/10</option>
+                            <option value="2">20/25</option>
+                            <option value="3">20/30</option>
+                            <option value="3">20/40</option>
+                            <option value="3">20/50</option>
+                            <option value="3">20/80</option>
+                            <option value="3">20/100</option>
+                            <option value="3">20/200</option>
+                            <option value="3">20/400</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+
+                    <div class="col">
+                        <label for="av-cerca-sin-rx">AV-CERCA SIN RX</label>
+                        <select class="form-select">
+                            <option selected>0.50 M</option>
+                            <option value="2">0.70 M</option>
+                            <option value="3">0.75 M</option>
+                            <option value="4">1 M</option>
+                            <option value="5">1.50 M</option>
+                            <option value="6">1.75 M</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="od">OD</label>
+                        <input type="text" class="form-control" name="od" id="od">
+                    </div>
+
+                    <div class="col">
+                        <label for="od">OI</label>
+                        <input type="text" class="form-control" name="oi" id="oi">
+                    </div>
+
+                    <div class="col">
+                        <label for="add">Add:</label>
+                        <select class="form-select">
+                            <option selected>+1.50</option>
+                            <option value="2">+1.00</option>
+                            <option value="3">+1.75</option>
+                            <option value="4">+2.00</option>
+                            <option value="5">+2.25</option>
+                            <option value="6">+2.50</option>
+                            <option value="7">+2.75</option>
+                            <option value="8">N/A</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="alt">ALT</label>
+                        <input type="text" class="form-control" name="alt" id="alt">
+                    </div>
+                    
+                    <div class="col">
+                        <label for="dip">DIP</label>
+                        <input type="number" name="dip" id="dip" class="form-control">
+                    </div>
+
+                    <div class="col">
+                        <label for="diseño-lente">Diseño Lente</label>
+                        <select class="form-select">
+                            <option selected>Progresivo</option>
+                            <option value="2">Monofocal</option>
+                            <option value="3">Bifocal</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+
+                    <div class="col">
+                        <label for="diagnostico-refractivo">Diagnostigo Refractivo</label>
+                        <input type="text" name="diagnostico-refractivo" id="diagnostico-refractivo" class="form-control">
+                    </div>
+
+                    <div class="col">
+                        <label for="av-od-con-rx">AV-OD SIN RX</label>
+                        <select class="form-select">
+                            <option selected>20/10</option>
+                            <option value="2">20/20</option>
+                            <option value="2">20/25</option>
+                            <option value="3">20/30</option>
+                            <option value="3">20/40</option>
+                            <option value="3">20/50</option>
+                            <option value="3">20/80</option>
+                            <option value="3">20/100</option>
+                            <option value="3">20/200</option>
+                            <option value="3">20/400</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="av-oi-con-rx">AV-OI SIN RX</label>
+                        <select class="form-select">
+                            <option selected>20/10</option>
+                            <option value="2">20/20</option>
+                            <option value="2">20/25</option>
+                            <option value="3">20/30</option>
+                            <option value="3">20/40</option>
+                            <option value="3">20/50</option>
+                            <option value="3">20/80</option>
+                            <option value="3">20/100</option>
+                            <option value="3">20/200</option>
+                            <option value="3">20/400</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="av-cerca-sin-rx">AV-CERCA CON RX</label>
+                        <select class="form-select">
+                            <option selected>0.50 M</option>
+                            <option value="2">0.70 M</option>
+                            <option value="3">0.75 M</option>
+                            <option value="4">1 M</option>
+                            <option value="5">1.50 M</option>
+                            <option value="6">1.75 M</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="binocularidad">Binocularidad</label>
+                        <select class="form-select">
+                            <option selected>Orto</option>
+                            <option value="2">.</option>
+                            <option value="3">.</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="pruebas-al-colot">Pruebas Al Color</label>
+                        <select class="form-select">
+                            <option selected>Tricromatismo</option>
+                            <option value="2">Deuteromalia</option>
+                        </select>
+                    </div>
+                    
+                    
+                </div>
+
+                <div class="row mt-4">
+
+                    <div class="col">
+                        <label for="Esteropsis">Estereopsis</label>
+                        <select class="form-select">
+                            <option selected>40 SEC ARCO</option>
+                            <option value="2">.</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="semaforo">Semaforo</label>
+                        <select class="form-select">
+                            <option selected>Verde</option>
+                            <option value="2">Amarillo</option>
+                            <option value="3">Rojo</option>
+                        </select>
+                    </div>
+
+                    <div class="col">
+                        <label for="Optometrista">Optometrista</label>
+                        <input type="text" class="form-control" name="Optometrista" id="Optometrista">
+                    </div>
+
+                    <div class="col">
+                        <label for="tratamientos-extras">Tratamientos Extras</label>
+                        <input type="text" class="form-control" name="tratamientos-extras" id="tratamientos-extras">
+                    </div>
+
+                    <div class="col">
+                        <label for="observaciones">Observaciones</label>
+                        <input type="text" name="observaciones" id="observaciones" class="form-control">
+                    </div>
+                </div>
+                
+                
+            </div>
+
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-primary">Guardar</button>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    </body>
+</html>
